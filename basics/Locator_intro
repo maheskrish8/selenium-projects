@@ -1,0 +1,78 @@
+What is locator?
+
+to identify the web element into the webpage.
+
+8 types
+=======
+id
+name
+classname
+tagname
+linktext
+partiallinktext
+xpath
+cssSelector
+
+xpath:
+======
+
+1) Relative xpath
+
+2) Absolute xpath
+
+1) Relative xpath
+==================
+
+i) Single attribute
+===================
+
+  //tagname[@attribute='value']
+
+  //input[@data-testid='royal_email']
+
+ii) Multiple attribute
+======================
+
+  //tagname[@attribute='value'][@attribute='vale']
+
+  //a[@data-testid='open-registration-form-button']
+
+iii) text() function
+=====================
+
+  //tagname[text()='value']
+
+  //div[text()='Sign Up']
+
+
+iv) contains() function
+=======================
+
+contains text()
+===============
+//tagname[contains(text(),'partial_value')]
+
+//a[contains(text(),'acc')]
+
+contains attribute:
+==================
+
+//tagname[contains(@attribute = 'paritial_value')]
+
+//a[contains(@id,'_0_0')]
+
+v) starts-with() function
+
+starts-with text():
+===================
+
+//tagname[starts-with(text(),'starting-value')]
+
+//a[starts-with(text(),'Create n')]
+
+starts-with attrbute:
+====================
+
+//tagname[starts-with(@attribute,'starting_value')]
+
+//a[starts-with(@id,'u_0')]
